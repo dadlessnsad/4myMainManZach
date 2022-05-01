@@ -40,4 +40,9 @@ contract TenPhotoCollection is ERC721A, Ownable {
     );
   }
 
+  // Delete this function if you want tokenId to start at 0
+  function _startTokenId() internal view override virtual returns (uint256) {
+    return 1;
+  }
+
 }
