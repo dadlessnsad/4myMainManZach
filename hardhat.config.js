@@ -29,13 +29,13 @@ module.exports = {
   },
   gasReporter: {
     currency: 'ETH',
-    coinmarketcap: "ed130847-6c1e-4071-b79d-0e037d5df036",
+    coinmarketcap: "",
     gasPrice: 50
   },
   etherscan: {
     // Your API key for Etherscan
     // Obtain one at https://etherscan.io/
-    apiKey: "AY2IGT76ACUJGCSJV9SD4V4DJVFPEFH8GH"
+    apiKey: ""
   },
   contractSizer: {
     alphaSort: true,
