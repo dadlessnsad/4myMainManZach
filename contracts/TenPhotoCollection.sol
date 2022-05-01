@@ -27,10 +27,14 @@ contract TenPhotoCollection is ERC721A, Ownable {
     baseURI = _baseURI;
   }
 
-    function setBaseExtension(string memory _baseExtension) public onlyOwner {
+  function setBaseExtension(string memory _baseExtension) public onlyOwner {
     baseExtension = _baseExtension;
   }
-  
+
+  function setMaxSupply(uint256 _newMaxSupply) public onlyOwner {
+    maxSupply = _newMaxSupply;
+  }
+
   function _preMint(uint256 _amount) private {
     require(_amount <= maxSupply, "Max Supply Reached");
     _safeMint(msg.sender, _amount);
